@@ -1,17 +1,16 @@
-name: Bash Script
-on:
-    push:
-    branches: [ main ]
-    pull_request:
-    branches: [ main ]
+   name: python-app
 
-jobs:
-  bash-script:
-    runs-on: ubuntu-latest
+   on:
+     push:
+       branches: [ main ]
+     pull_request:
+       branches: [ main ]
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Permissions
+   jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+      - name: checkout repo
+        uses: actions/checkout@main
+      - name: build application
         run: make do_script
