@@ -14,7 +14,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Permissions
-        run: chmod +x bash.sh
-
-      - name: Run Bash script
-        run: sh bash.sh
+        run: make do_script
