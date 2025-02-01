@@ -6,9 +6,17 @@ Shell scripting example
 
 ## Documentation
 
+`Make the script executable.`
+
+Before we run the script, we also need to make it executable so that it can run without any issues. to do so type in the following command:
+
 ```shell
 chmod +x update.sh
 ```
+
+`Run the script`
+
+Now everything is done and we can test our script by running it with the following command:
 
 ```shell
 ./update.sh
